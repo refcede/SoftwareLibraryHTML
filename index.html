@@ -3,244 +3,506 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Software Nguliyahh</title>
+    <title>Software Library untuk membantu nguliyah kamu dari mas CIBAYGANTENKK</title>
     
     <link rel="stylesheet" href="style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <link rel="icon" type="image/png" href="images/favicon.png"> </head>
+    <link rel="icon" type="image/png" href="images/favicon.png"> 
+</head>
 <body>
 
     <header>
-        <div class="container header-content">
-            <h1><i class="fas fa-box-archive"></i>Software Library</h1>
-            <button id="theme-toggle" class="theme-toggle-btn">
+    <div class="header-content"> <h1><i class="fas fa-cube"></i>CIBAY SOFTWARE</h1>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#java-section" class="nav-link"><i class="fab fa-java"></i> Java Environment</a></li>
+                <li class="nav-item"><a href="#ide-section" class="nav-link"><i class="fas fa-code"></i> IDE Tools</a></li>
+                <li class="nav-item"><a href="#game-section" class="nav-link"><i class="fas fa-gamepad"></i> Games</a></li>
+                <li class="nav-item"><a href="#faq-section" class="nav-link"><i class="fas fa-question-circle"></i> FAQ Help</a></li>
+                <li class="nav-item"><a href="#ppt-section" class="nav-link"><i class="fas fa-graduation-cap"></i> Materi Kuliah</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
                 <i class="fas fa-moon"></i>
             </button>
+            
+            <button class="hamburger" id="hamburger-btn">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
         </div>
-    </header>
+
+    </div>
+</header>
 
     <main class="container">
         
-        <div class="search-container">
-            <i class="fas fa-search"></i>
-            <input type="search" id="search-bar" placeholder="Cari di semua software...">
+        <div class="hero-section">
+            <h2 id="greeting-text" style="margin-bottom: 20px; font-size: 1.8rem; color: var(--text-primary);">
+        Halo, Selamat Datang!
+    </h2>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="search" id="search-bar" placeholder="Cari software, tools, atau game...">
+            </div>
+            <div id="no-result" style="display:none; margin-top: 20px; color: var(--text-secondary);">
+                <p>Tidak ditemukan hasil yang cocok.</p>
+            </div>
         </div>
 
-        <nav class="category-nav">
-            <a href="#java-section"><i class="fab fa-java"></i> Software Java & Localhost</a>
-            <a href="#coding-section"><i class="fas fa-code"></i> Software Coding IDE</a>
-        </nav>
-
-
         <section id="java-section" class="software-category">
-            <h2><i class="fab fa-java"></i>Software Java & Localhost</h2>
+            <h2><i class="fab fa-java"></i>Java Environment</h2>
             
             <div class="software-grid">
-                
                 <div class="software-card">
+                    
                     <div class="card-icon">
-                        <img src="https://www.logo.wine/a/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.svg" alt="JAVA VERSION">
+                        <img src="https://bhavinsangani14.github.io/Tech-Logo-Assets/tech-logos/java.svg" alt="Java Logo">
                     </div>
-                    <h3>Java Development Kit</h3>
-                    <p>JDK yang dibutuhkan.</p>
+                    <h3>Java JDK</h3>
+                    <p>Development Kit wajib untuk menjalankan dan compile program Java.</p>
+                    
                     <button class="download-btn version-toggle-btn">
-                        <i class="fas fa-download"></i> Tampilkan Versi
+                        <span>Pilih Versi</span>
                         <i class="fas fa-chevron-down toggle-icon"></i>
                     </button>
 
                     <div class="version-list" style="display: none;">
                         <a href="https://www.mediafire.com/file/z0xlbh821bzae8h/jdk-24.0.2_windows-x64_bin.exe/file" class="version-link" target="_blank">
-                            <strong>JDK 24.0.2.jar</strong> (Terbaru Support Netbeans 21+)
+
+                            <strong>JDK 24 (Terbaru)</strong>
+                            <span>Support Netbeans 21+</span>
+                            
                         </a>
+                        <button class="guide-btn" data-id="java">
+                        <i class="fas fa-book-open"></i> Cara Install JDK 24
+    
+                        </button>
                         <a href="https://www.mediafire.com/file/5yhs6efoax8cl5g/jdk-17.0.12_windows-x64_bin.exe/file" class="version-link" target="_blank">
-                            <strong>JDK 17.0.12.jar</strong> (JDK 17 Support Netbeans 17+)
+                            <strong>JDK 17 LTS</strong>
+                            <span>Stabil & Support Netbeans 17+</span>
                         </a>
-                        <a href="https://www.mediafire.com/file/nu1e6ldg230al46/jdk-8u451-windows-x64.exe/file" class="version-link" target="_blank">
-                            <strong>JDK 8 8u451 x64.jar</strong> (Download ini kalo pake netbeans lawas 8.2)
+                        <button class="guide-btn" data-id="java 17">
+                        <i class="fas fa-book-open"></i> Cara Install JDK 17 LTS
+    
+                        </button>
+                         <a href="https://www.mediafire.com/file/nu1e6ldg230al46/jdk-8u451-windows-x64.exe/file" class="version-link" target="_blank">
+                            <strong>JDK 8 (Legacy)</strong>
+                            <span>Untuk Netbeans 8.2 Lawas</span>
                         </a>
-                        <a href="https://www.mediafire.com/file/atfqwevd2kwvjsn/mysql-connector-j-9.4.0.rar/file" class="version-link" target="_blank">
-                            <strong>JDK MYSQL Connector.jar</strong> (Download ini Buat Library Connect Database)
+                        <button class="guide-btn" data-id="java 8">
+                        <i class="fas fa-book-open"></i> Cara Install JDK 8
+    
+                    </button>
+                    <a href="https://www.mediafire.com/file/atfqwevd2kwvjsn/mysql-connector-j-9.4.0.rar/file" class="version-link" target="_blank">
+                            <strong>MYSQL Connector.jar</strong>
+                            <span>Sebagai konektor mysql</span>
                         </a>
-                        <a href="https://www.mediafire.com/file/zn8oa0ahidilgu0/flatlaf-3.6.1.jar/file" class="version-link" target="_blank">
-                            <strong>Flatlaf-3.6.1.jar</strong> (Download ini Buat tema jawa nya lebih jospar)
+                        <button class="guide-btn" data-id="mysql">
+                        <i class="fas fa-book-open"></i> Cara Pakai MYSQL.jar
+    
+                    </button>
+                    
+                    <a href="https://www.mediafire.com/file/zn8oa0ahidilgu0/flatlaf-3.6.1.jar/file" class="version-link" target="_blank">
+                            <strong>Flatlaf-3.6.1.jar</strong>
+                            <span>Untuk tampilan UI Java swing lebih bagus</span>
                         </a>
+                        <button class="guide-btn" data-id="flatlaf">
+                        <i class="fas fa-book-open"></i> Cara Pakai Flatlaf.jar
+    
+                    </button>
                     </div>
                 </div>
 
                 <div class="software-card">
                     <div class="card-icon">
-                        <img src="https://cdn2.iconfinder.com/data/icons/pack1-baco-flurry-icons-style/512/XAMPP.png" alt="XAMPP">
+                        <img src="https://cdn.worldvectorlogo.com/logos/xampp.svg" alt="XAMPP Logo">
                     </div>
                     <h3>XAMPP</h3>
-                    <p>Localhost</p>
+                    <p>Paket stack solusi server web lintas platform (Apache, MariaDB, PHP).</p>
                     <button class="download-btn version-toggle-btn">
-                        <i class="fas fa-download"></i> Unduh
+                        <span>Download</span>
                         <i class="fas fa-chevron-down toggle-icon"></i>
                     </button>
-
-                    <div class="version-list" style="display: none;">
-                        <a href="https://www.mediafire.com/file/s1owaerjug7pkgc/xampp-windows-x64-8.0.30-0-VS16-installer.exe/file" class="version-link" target="_blank">
-                            <strong>XAMPP x64 Installer.exe</strong> (Version 8.0.30-0-VS16)
-                        </a>
-                        <a href="https://www.mediafire.com/file/sguz52jsagafghw/Bukamysql.exe/file" class="version-link" target="_blank">
-                            <strong>Bukamysql.exe</strong> (Program ini dapat membuka Mysql MariaDB Secara langsung tanpa harus merubah direktori ke instalasi XAMPP) Cara Penggunaan : Dibuka Langsung Saja. Selamat Mencoba sayang!
-                        </a>
-                        
-                    </div>
                     
+                    <div class="version-list" style="display: none;">
+                         <a href="https://www.mediafire.com/file/s1owaerjug7pkgc/xampp-windows-x64-8.0.30-0-VS16-installer.exe/file" class="version-link" target="_blank">
+                            <strong>XAMPP 8.0.30 x64</strong>
+                            <span>Versi Stabil Standard</span>
+                        </a>
+                        <button class="guide-btn" data-id="xampp">
+    <i class="fas fa-book-open"></i> Cara Install
+    </button>
+                        <a href="https://www.mediafire.com/file/sguz52jsagafghw/Bukamysql.exe/file" class="version-link" class="version-link" target="_blank">
+                            <strong>Portable MySQL</strong>
+                            <span>Tanpa Install (Langsung Run)</span>
+                        </a>
+                        <button class="guide-btn" data-id="bukasql">
+    <i class="fas fa-book-open"></i> Cara Install
+    </button>
+                    </div>
                 </div>
-
-                 <div class="software-card">
-            <div class="card-icon">
-                <img src="https://www.svgrepo.com/show/448278/cisco.svg" alt="Cisco">
-            </div>
-            <h3>Cisco Packet Tracer</h3>
-            <p> perangkat lunak simulasi jaringan yang dikembangkan oleh Cisco Systems untuk membantu pengguna membuat, mengonfigurasi, dan menyimulasikan topologi jaringan virtual.</p>
-            <a href="https://www.mediafire.com/file/agj8e26nkea6g4g/CiscoPacketTracer_900_win_64bit_2.exe/file" class="download-btn" download>
-                <i class="fas fa-download"></i> Unduh
-            </a>
-        </div>
-           
+                
         </section>
 
 
-        <section id="coding-section" class="software-category">
-            <h2><i class="fas fa-code"></i> Kumpulan Software Coding</h2>
+        <section id="ide-section" class="software-category">
+            <h2><i class="fas fa-laptop-code"></i>Development Tools</h2>
             
-            
-                <div class="software-grid">
+            <div class="software-grid">
+                
                 <div class="software-card">
                     <div class="card-icon">
-                        <img src="https://www.logo.wine/a/logo/NetBeans/NetBeans-Logo.wine.svg" alt="Netbeans">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg" alt="Netbeans">
                     </div>
                     <h3>Apache Netbeans</h3>
-                    <p>(IDE) open-source, yang dapat digunakan untuk mengembangkan aplikasi di berbagai bahasa pemrograman seperti Java, PHP, JavaScript, C/C++.</p>
+                    <p>IDE Open-source utama untuk pengembangan aplikasi Java Desktop & Web.</p>
                     <button class="download-btn version-toggle-btn">
-                        <i class="fas fa-download"></i> Tampilkan Versi
+                        <span>Pilih Versi</span>
                         <i class="fas fa-chevron-down toggle-icon"></i>
                     </button>
-
                     <div class="version-list" style="display: none;">
-                        <a href="https://www.mediafire.com/file/7u7lhw8gbavtg3s/Apache-NetBeans-27.exe/file" class="version-link" target="_blank">
-                            <strong>Apache Netbeans 27</strong> (Terbaru) System Requirement :multi-core CPU 4 Core, 4 GB RAM, 1 GB of free disk space.
-                        </a>
-                        <a href="https://www.mediafire.com/file/siyb741ka84czrw/Apache-NetBeans-17-bin-windows-x64.exe/file" class="version-link" target="_blank">
-                            <strong>Apache Netbeans 17</strong> (Versi 17) System Requirement :multi-core CPU 4 Core, 4 GB RAM, 1 GB of free disk space.
-                        </a>
-                        <a href="https://www.mediafire.com/file/xms9ja33o2ymnq7/netbeans-8.2-windows.exe/file" class="version-link" target="_blank">
-                            <strong>Netbeans 8.2</strong> (Old version) System Requirement : Dual-Core Intel (64-bit), 1 GB of RAM (minimum),  700 MB of free space (minimum). (cocok untuk PC kentang)
-                        </a>
+                        <a href="https://www.mediafire.com/file/7u7lhw8gbavtg3s/Apache-NetBeans-27.exe/file" class="version-link"><strong>Netbeans 27</strong> <span>Latest Release</span></a>
+                        <a href="https://www.mediafire.com/file/xms9ja33o2ymnq7/netbeans-8.2-windows.exe/file" class="version-link"><strong>Netbeans 8.2</strong> <span>Ringan (Old School)</span></a>
                     </div>
+                    <button class="guide-btn" data-id="netbeans">
+                <i class="fas fa-book-open"></i> Cara Install
+                </button>
                 </div>
 
-                 <div class="software-card">
-            <div class="card-icon">
-                <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Cisco">
-            </div>
-            <h3>python-manager-25.0.0</h3>
-            <p>Python Language</p>
-            <a href="https://www.mediafire.com/file/91y6frqfmmhkshw/python-manager-25.0.msix/file" class="download-btn" download>
-                <i class="fas fa-download"></i> Unduh
-            </a>
-        </div>
+                <div class="software-card">
+                    <div class="card-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code">
+                    </div>
+                    <h3>Visual Studio Code</h3>
+                    <p>Text Editor paling populer dengan ribuan ekstensi dan fitur IntelliSense.</p>
+                    <a href="https://www.mediafire.com/file/xkfjw23yeqqyyqz/VSCodeUserSetup-x64-1.105.1.exe/file" class="download-btn">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+<div class="software-card">
+                    <div class="card-icon">
+                        <img src="https://www.svgrepo.com/show/448278/cisco.svg" alt="Cisco">
+                    </div>
+                    <h3>Cisco Packet Tracer</h3>
+                    <p>Simulasi topologi jaringan virtual untuk belajar networking.</p>
+                    <a href="https://www.mediafire.com/file/agj8e26nkea6g4g/CiscoPacketTracer_900_win_64bit_2.exe/file" class="download-btn" class="download-btn" download>
+                        <i class="fas fa-download"></i> Unduh v9.0
+                    </a>
+                    <button class="guide-btn" data-id="cisco">
+    <i class="fas fa-book-open"></i> Cara Install
+    </button>
+                </div>
+                <div class="software-card">
+                    <div class="card-icon">
+                        <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python">
+                    </div>
+                    <h3>Python 25</h3>
+                    <p>Bahasa pemrograman interpreted tingkat tinggi untuk general-purpose.</p>
+                    <a href="https://www.mediafire.com/file/91y6frqfmmhkshw/python-manager-25.0.msix/file" class="download-btn">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                    <button class="guide-btn" data-id="python">
+                <i class="fas fa-book-open"></i> Cara Install
+                </button>
+                </div>
 
-              <div class="software-card">
-            <div class="card-icon">
-                <img src="https://www.logo.wine/a/logo/C%2B%2B/C%2B%2B-Logo.wine.svg" alt="Netbeans">
-            </div>
-            <h3>Dev Cpp</h3>
-            <p>IDE open-source untuk bahasa pemrograman C dan C++.</p>
-            <button class="download-btn version-toggle-btn">
-                <i class="fas fa-download"></i> Tampilkan Versi
-                <i class="fas fa-chevron-down toggle-icon"></i>
-            </button>
-            <div class="version-list" style="display: none;">
-                <a href="https://www.mediafire.com/file/6zp82p1umeclgh6/Dev-Cpp+5.11+TDM-GCC+4.9.2+Setup.exe/file" class="version-link" target="_blank">
-                    <strong>Dev-cpp 5.11</strong> (dev-cpp v 5.11) System Requirement : Windows XP, Vista, 7, 8, 8.1, 10, or 11, 1.0 GHz Intel Pentium, RAM: 256 MB minimum, 100 MB free
-                </a>
-                <a href="https://www.mediafire.com/file/5a985c9tfcuqo3r/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup.zip/file" class="version-link" target="_blank">
-                    <strong>Embarcadero Dev-cpp 6.3</strong> (lebih ringan lebih enak lebih jos!)
-                </a>
-            </div>
-        </div>
-                
-                    <div class="software-card">
-            <div class="card-icon">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="XAMPP">
-            </div>
-            <h3>Visual Studio Code</h3>
-            <p>Text Editor Cerdas, Menawarkan bantuan penulisan kode melalui fitur seperti IntelliSense yang memprediksi kode yang akan ditulis</p>
-            <a href="https://www.mediafire.com/file/xkfjw23yeqqyyqz/VSCodeUserSetup-x64-1.105.1.exe/file" class="download-btn" download>
-                <i class="fas fa-download"></i> Unduh
-            </a>
-        </div>
-               <div class="software-card">
-            <div class="card-icon">
-                <img src="https://digitalresearch.bsu.edu/studentsymposium2021/files/original/0819f70bc2e7a72233fa0c02fb8b77cc.png" alt="XAMPP">
-            </div>
-            <h3>SPSS</h3>
-            <p></p>
-            <a href="https://www.mediafire.com/file/towjdt19o51azon/SPSS_27.zip/file" class="download-btn" download>
-                <i class="fas fa-download"></i> Unduh
-            </a>
-        </div>
-            <div>
                 <div class="software-card">
                     <div class="card-icon">
                         <img src="https://notepad-plus-plus.org/images/logo.svg" alt="Notepad++">
                     </div>
                     <h3>Notepad++</h3>
-                    <p>Text Editor yang ringan, open source support penyorotan sintaksis (syntax highlighting) Mendukung sekitar 80 bahasa pemrograman dan markup, seperti HTML, CSS, JavaScript, PHP, Python, dan C++</p>
-                    
-                    <a href="https://www.mediafire.com/file/yof3nnqzgm8h64g/npp.8.8.7.Installer.x64.exe/file" class="download-btn" download>
-                        <i class="fas fa-download"></i> Unduh
+                    <p>Editor teks ringan pengganti Notepad bawaan dengan fitur syntax highlighting.</p>
+                    <a href="https://www.mediafire.com/file/yof3nnqzgm8h64g/npp.8.8.7.Installer.x64.exe/file" class="download-btn"> <i class="fas fa-download"></i> Unduh
                     </a>
-            </div>
+                    <button class="guide-btn" data-id="npp">
+                <i class="fas fa-book-open"></i> Cara Install
+                </button>
+                </div>
 
+                    <div class="software-card">
+                    <div class="card-icon">
+                        <img src="https://www.tech-logo.com/static/images/icons/spss/SPSS.svg" alt="Notepad++">
+                    </div>
+                    <h3>SPSS</h3>
+                    <p>SPSS adalah perangkat lunak statistik yang digunakan untuk analisis data, pengolahan data, dan pembuatan laporan dalam berbagai disiplin ilmu, termasuk ilmu sosial, bisnis, dan kesehatan..</p>
+                    <a href="https://www.mediafire.com/file/towjdt19o51azon/SPSS_27.zip/file" class="download-btn"> <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+
+                <div class="software-card">
+                    <div class="card-icon">
+                        <img src="https://bhavinsangani14.github.io/Tech-Logo-Assets/tech-logos/cPlusPlus.svg" alt="c++">
+                    </div>
+                    <h3>Dev C++</h3>
+                    <p>Dev C++ adalah Integrated Development Environment (IDE) yang dirancang khusus untuk bahasa pemrograman C dan C++. IDE ini sangat populer di kalangan programmer pemula dan menengah karena ringan, cepat, dan mudah digunakan.</p>
+                    <button class="download-btn version-toggle-btn">
+                        <span>Pilih Versi</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                    </button>
+                    <div class="version-list" style="display: none;">
+                        <a href="https://www.mediafire.com/file/6zp82p1umeclgh6/Dev-Cpp+5.11+TDM-GCC+4.9.2+Setup.exe/file" class="version-link"><strong>Dev-cpp 5.11</strong> <span>Latest Release</span></a>
+                        <a href="https://www.mediafire.com/file/5a985c9tfcuqo3r/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup.zip/file" class="version-link"><strong>Embarcadero Dev-cpp 6.3</strong> <span>Lebih ringan lebih jospar</span></a>
+                    </div>
+                    <button class="guide-btn" data-id="devcpp">
+                <i class="fas fa-book-open"></i> Cara Install
+                </button>
+                </div>
+
+            </div>
         </section>
 
-        <section id="coding-section" class="software-category">
-            <h2><i class=""></i> Game biar ga suntuk</h2>
-           
-            <div>
+        <section id="game-section" class="software-category">
+            <h2><i class="fas fa-gamepad"></i>Refreshment</h2>
+            
+            <div class="software-grid">
+                <div class="software-card">
+                    <div class="card-icon">
+                        <img src="https://files.brandlogos.net/svg/l2jsX2Ey6l/plants-vs.-zombies-logo-brandlogos.net_h0q44268r.svg" alt="PvZ">
+                    </div>
+                    <h3>Plants vs. Zombies</h3>
+                    <p>Lindungi rumahmu dari serangan zombie menggunakan tanaman mutan!</p>
+                    <button class="download-btn version-toggle-btn">
+                        <span>Pilih Versi</span>
+                        <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                        <div class="version-list" style="display: none;">
+                        <a href="https://www.mediafire.com/file/v486b2tge23bhwy/Plants+vs.+Zombies.rar/file" class="version-link"><strong>GOTY Edition</strong> <span>Ringan</span></a>
+                        <a href="https://www.mediafire.com/file/a5o8sdcuy0ov03z/Plnts+vs+Zmbies+Rplanted.B20563741.kuyhAa.7z/file" class="version-link"><strong>Replanted (HD)</strong> <span>Butuh Spek PC/LAPTOP TINGGI</span></a>
+                        <button class="guide-btn" data-id="game">
+                        <i class="fas fa-book-open"></i> Cara Install
+                        </button>
+                    </div>
+                </div>
 
             <div class="software-card">
                     <div class="card-icon">
-                        <img src="https://images.seeklogo.com/logo-png/28/1/plants-vs-zombies-logo-png_seeklogo-289188.png" alt="Notepad++">
+                        <img src="https://www.svgrepo.com/show/303623/gta-grand-theft-auto-logo.svg" alt="Notepad++">
                     </div>
+                    <h3>GTA Extreme Indonesia V7.1</h3>
+                    <p>GTA Extreme dengan kearifan lokal</p>
+                    <a href="https://www.mediafire.com/file/zbsbpfep2idmz0u/%255BGTAind.com%255D_GTA_Extreme_v7.1.rar/file" class="download-btn"> <i class="fas fa-download"></i> Unduh
+                    </a>
+                    <button class="guide-btn" data-id="game">
+    <i class="fas fa-book-open"></i> Cara Install
+    </button>
+                </div>
+            
+        </section>
+        <section id="ppt-section" class="software-category">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+        <h2><i class="fas fa-book-reader"></i> Materi & Modul Kuliah</h2>
+        <span style="background:var(--primary-color); color:white; padding:2px 8px; border-radius:4px; font-size:0.7rem; font-weight:bold;">Tahap Pengembangan</span>
+    </div>
+    
+    <div class="software-grid">
 
-                    <h3>Plant Vs Zombie</h3>
-                    <p>RARARARAWRRRRRRRRR!!!!!</p>
-                    
-                    <button class="download-btn version-toggle-btn">
-                <i class="fas fa-download"></i> Tampilkan Versi
+        <div class="software-card">
+            <span class="sys-badge sys-heavy"><i class="fas fa-code"></i> Coding Berat</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="PBO II" loading="lazy">
+            </div>
+            <h3>PBO II</h3>
+            <p>Pemrograman Berorientasi Objek Lanjutan (Inheritance, Polymorphism, GUI).</p>
+            
+            <button class="download-btn version-toggle-btn">
+                <span>Pilih Pertemuan</span>
                 <i class="fas fa-chevron-down toggle-icon"></i>
             </button>
             <div class="version-list" style="display: none;">
-                <a href="https://www.mediafire.com/file/v486b2tge23bhwy/Plants+vs.+Zombies.rar/file" class="version-link" target="_blank">
-                    <strong>Plant Vs Zombie (GOTY)</strong> (Recomended Buat PC Kentang) Cara install : Tinggal Ekstrak Folder nya
-                </a>
-                <a href="https://www.mediafire.com/file/a5o8sdcuy0ov03z/Plnts+vs+Zmbies+Rplanted.B20563741.kuyhAa.7z/file" class="version-link" target="_blank">
-                    <strong>Plant Vs Zombie Replanted</strong> (Lebih HD Remake dari PVZ GOTY, Berat Di PC Kentang) Cara install : Ekstrak Folder Plants vs Zombies Replanted.B20563741.kuyhAa, Lalu open setup.exe 
-                </a>
+                <a href="#" class="version-link"><strong>Pertemuan 1-7</strong> <span>Konsep OOP & Class</span></a>
+                <a href="#" class="version-link"><strong>Materi UTS</strong> <span>Kisi-kisi & Soal</span></a>
+                <a href="#" class="version-link"><strong>Pertemuan 8-14</strong> <span>GUI & Database</span></a>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <span class="sys-badge sys-med"><i class="fas fa-database"></i> SQL Lanjut</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="PBD II" loading="lazy">
+            </div>
+            <h3>Perancangan Basis Data II</h3>
+            <p>Normalisasi, ERD Lanjutan, Store Procedure, dan Trigger database.</p>
+            
+            <button class="download-btn version-toggle-btn"><span>Download PPT</span><i class="fas fa-chevron-down toggle-icon"></i></button>
+            <div class="version-list" style="display: none;">
+                <a href="#" class="version-link"><strong>Modul Praktikum</strong> <span>PDF Lengkap</span></a>
+                <a href="#" class="version-link"><strong>Slide Dosen</strong> <span>PPT Pertemuan 1-14</span></a>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <div class="ribbon hot">SULIT</div>
+            <span class="sys-badge sys-heavy"><i class="fas fa-brain"></i> Logika</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="Algo" loading="lazy">
+            </div>
+            <h3>Algoritma & Strukdat</h3>
+            <p>Array, Linked List, Stack, Queue, Tree, dan Sorting Algorithm.</p>
+            
+            <button class="download-btn version-toggle-btn"><span>Download Materi</span><i class="fas fa-chevron-down toggle-icon"></i></button>
+            <div class="version-list" style="display: none;">
+                <a href="#" class="version-link"><strong>Source Code C++</strong> <span>Contoh Program</span></a>
+                <a href="#" class="version-link"><strong>E-Book</strong> <span>Strukdat for Dummies</span></a>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <span class="sys-badge sys-info"><i class="fas fa-network-wired"></i> Praktek</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="Jarkom" loading="lazy">
+            </div>
+            <h3>Jaringan Komputer</h3>
+            <p>Subnetting, Routing, Cisco Packet Tracer, dan Konfigurasi Mikrotik.</p>
+            
+            <button class="download-btn version-toggle-btn"><span>Download Materi</span><i class="fas fa-chevron-down toggle-icon"></i></button>
+            <div class="version-list" style="display: none;">
+                <a href="#" class="version-link"><strong>Modul Cisco</strong> <span>Packet Tracer</span></a>
+                <a href="#" class="version-link"><strong>Materi Subnetting</strong> <span>Cara Cepat Menghitung</span></a>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <span class="sys-badge sys-light"><i class="fab fa-linux"></i> Teori & Praktek</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="Sisop" loading="lazy">
+            </div>
+            <h3>Sistem Operasi</h3>
+            <p>Manajemen Proses, Memory, Deadlock, dan Perintah Dasar Linux.</p>
+            
+            <button class="download-btn version-toggle-btn"><span>Download Materi</span><i class="fas fa-chevron-down toggle-icon"></i></button>
+            <div class="version-list" style="display: none;">
+                <a href="#" class="version-link"><strong>Perintah Linux</strong> <span>Cheat Sheet</span></a>
+                <a href="#" class="version-link"><strong>PPT Full Semester</strong> <span>Google Drive</span></a>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <span class="sys-badge sys-med"><i class="fas fa-globe"></i> Web Dev</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="Java Web" loading="lazy">
+            </div>
+            <h3>Java Web Prog.</h3>
+            <p>Pemrograman web berbasis Java (JSP, Servlet, Spring Boot, API).</p>
+            
+            <button class="download-btn version-toggle-btn"><span>Download Materi</span><i class="fas fa-chevron-down toggle-icon"></i></button>
+            <div class="version-list" style="display: none;">
+                <a href="#" class="version-link"><strong>Contoh Project</strong> <span>CRUD Sederhana</span></a>
+                <a href="#" class="version-link"><strong>Slide Materi</strong> <span>Servlet & JSP</span></a>
+            </div>
+        </div>
+
+        <div class="software-card">
+            <span class="sys-badge sys-info"><i class="fas fa-chart-bar"></i> Hitungan</span>
+            <div class="card-icon">
+                <img src="https://www.svgrepo.com/show/428085/study-university.svg" alt="Statistik" loading="lazy">
+            </div>
+            <h3>Statistik II</h3>
+            <p>Pengujian Hipotesis, Regresi Linear, SPSS, dan Analisis Data.</p>
+            
+            <button class="download-btn version-toggle-btn"><span>Download Materi</span><i class="fas fa-chevron-down toggle-icon"></i></button>
+            <div class="version-list" style="display: none;">
+                <a href="#" class="version-link"><strong>Tabel Statistik</strong> <span>Tabel T, Z, F</span></a>
+                <a href="#" class="version-link"><strong>Contoh Soal</strong> <span>+ Pembahasan</span></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="faq-section" class="software-category">
+            <h2 style="text-align: center; justify-content: center;">
+                <i class="fas fa-question-circle"></i> Sering Ditanyakan (FAQ)
+            </h2>
+            
+            <div class="faq-container">
+                
+                <details class="faq-item">
+                    <summary class="faq-summary">Apakah software ini aman dari virus?</summary>
+                    <div class="faq-content">
+                        <p>Semua software di sini sudah di-scan dan aman. Jika browser (Chrome/Edge) mendeteksi sebagai virus, itu biasanya <strong>False Alarm</strong> karena file berupa Crack/Patch. Matikan antivirus sementara saat download & install.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Apa password file RAR / ZIP nya?</summary>
+                    <div class="faq-content">
+                        <p>Password default untuk semua file di website ini adalah: <strong>123</strong> atau <strong>www.kuyhaa.me</strong> (Tergantung sumber). Cek deskripsi di nama file saat download.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Bagaimana cara mengatasi link error / mati?</summary>
+                    <div class="faq-content">
+                        <p>Link mati biasanya karena dihapus oleh Google/Mediafire. Silakan gunakan tombol <strong>"Request Software"</strong> di bagian bawah halaman untuk melaporkan link mati agar segera kami perbaiki.</p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-summary">Cara downloadnya gimana bang?</summary>
+                    <div class="faq-content">
+                        <p>Klik tombol download, pilih versi yang diinginkan. Anda akan diarahkan ke Mediafire/Google Drive. Klik tombol download berwarna biru di sana. Pastikan IDM anda aktif.</p>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+        </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Dibuat dengan <i class="fas fa-heart" style="color: #e11d48;"></i> oleh <strong>CIBAYGANTENKK</strong> &copy; 2025</p>
+            
+            <div style="margin-top: 10px; font-size: 1.2rem; margin-bottom: 10px;">
+                <a href="#" style="color: var(--text-primary); margin: 0 10px;"><i class="fab fa-github"></i></a>
+                <a href="#" style="color: var(--text-primary); margin: 0 10px;"><i class="fab fa-instagram"></i></a>
             </div>
 
-        </section>
+            <div class="footer-request">
+                <p>Belum nemu software yang dicari? Request aja!</p>
+                
+                <div class="request-buttons-wrapper">
+                    
+                    <a href="https://wa.me/6288976498862?text=Izinnnnnnn+min,+mau+request+software+..." target="_blank" class="request-btn btn-wa">
+                        <i class="fab fa-whatsapp"></i> Via WhatsApp
+                    </a>
 
-    </main>
-    </main> <footer class="site-footer">
-        <p>Dibuat dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> oleh <strong>CIBAYGANTENKK</strong> &copy; 2025</p>
-        <p>
-            <a href="https://github.com/refcede" target="_blank"><i class="fab fa-github"></i></a>
-            &nbsp;&nbsp; <a href="[LINK_INSTAGRAM_ANDA]" target="_blank"><i class=""></i></a>
-        </p>
+                    <div class="request-buttons-wrapper">
+                    
+                    <a href="https://forms.gle/uSe6Q8eL5bF4UzPf9" target="_blank" class="request-btn btn-form">
+                        <i class="fab fa-google-drive"></i> Via Google Form
+                    </a>
+
+                </div>
+            </div>
+            <div class="server-status" title="Server Normal">
+            <span class="status-dot"></span>
+            System Operational
+        </div>
+        </div>
     </footer>
+
+    <div id="info-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Panduan Install</h3>
+                <button class="close-modal-btn">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                </div>
+                
+        </div>
+    </div>
+
+    
+
+    <div id="toast-container" class="toast-container"></div>
 
     <script src="script.js"></script>
 </body>
