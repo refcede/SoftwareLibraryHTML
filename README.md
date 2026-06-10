@@ -2,7 +2,7 @@
 
 Ini adalah projek website saya dengan bahasa pemrograman HTML, Sebuah portal arsip *software* dan pusat materi perkuliahan yang didedikasikan untuk membantu mahasiswa mendapatkan "alat tempur" pemrograman dengan mudah, cepat, dan terpusat. Dikembangkan secara khusus untuk mendukung kebutuhan akademik untuk rekan rekan mahasiswa saya.
 
-🌐 **Kunjungi Website:** [Cibay Software](https://refcede.github.io/softwarecodingan/)
+🌐 **Kunjungi Website:** [Cibay Software](https://refcede.github.io/SoftwareLibraryHTML/)
 
 ## 🎯 Tujuan
 Repositori dan *website* ini dibuat untuk mengatasi kesulitan mahasiswa dalam mencari instalasi perangkat lunak (IDE, *environment*, *tools* analitik) dan materi pembelajaran yang aman. Semua tautan unduhan diarahkan secara langsung (via MediaFire/Google Drive) tanpa melewati *link shortener* yang mengganggu.
